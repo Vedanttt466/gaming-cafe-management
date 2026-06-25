@@ -1,0 +1,63 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: gaming-cafe-backend
+
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:gaming_cafe_db}?useSSL=false&serverTimezone=Asia/Kolkata&allowPublicKeyRetrieval=true
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+
+  jpa:
+    hibernate:
+      ddl-auto: validate     # schema is managed via database/schema.sql, not auto-generated
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: Asia/Kolkata
+    open-in-view: false
+
+  jackson:
+    time-zone: Asia/Kolkata
+
+cafe:
+  operating-hours:
+    open: "08:00"
+    close: "23:00"
+  happy-hour:
+    start: "08:00"
+    end: "12:00"
+    package-price: 120.00
+  standard-rate-per-hour: 50.00
+  billing-block-minutes: 30
+  booking:
+    token-amount: 50.00
+    hold-minutes: 30
+  total-pcs: 10
+
+jwt:
+  secret: ${JWT_SECRET:Y2hhbmdlLXRoaXMtc2VjcmV0LWluLXByb2R1Y3Rpb24tdG8tYS1sb25nLXJhbmRvbS1zdHJpbmc=}
+  access-token-expiry-ms: 3600000        # 1 hour
+  refresh-token-expiry-ms: 604800000     # 7 days
+
+razorpay:
+  key-id: ${RAZORPAY_KEY_ID:rzp_test_xxxxxxxxxxxx}
+  key-secret: ${RAZORPAY_KEY_SECRET:xxxxxxxxxxxxxxxxxxxxxxxx}
+
+cors:
+  allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173}
+
+logging:
+  level:
+    com.gamingcafe: INFO
+    org.springframework.security: WARN
