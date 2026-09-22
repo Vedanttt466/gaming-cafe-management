@@ -2,7 +2,7 @@
 
 A full-stack gaming cafe management system for managing PC reservations, customers, bookings, pricing, and cafe operations.
 
-## 🚀 Features
+## Features
 
 - PC availability management
 - Customer booking and reservation management
@@ -13,7 +13,7 @@ A full-stack gaming cafe management system for managing PC reservations, custome
 - Responsive web interface
 - Git-based version control
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 - React.js
@@ -35,7 +35,7 @@ A full-stack gaming cafe management system for managing PC reservations, custome
 - GitHub
 - VS Code
 
-## 🏗️ Architecture
+##  Architecture
 
 ```text
 React Frontend
