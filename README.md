@@ -35,6 +35,32 @@ A full-stack gaming cafe management system for managing PC reservations, custome
 - GitHub
 - VS Code
 
+##  REST API
+
+The application uses REST APIs to communicate between the frontend and Spring Boot backend.
+
+### Booking APIs
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/bookings` | Create a new booking |
+| GET | `/api/bookings/my-history` | Get customer's booking history |
+| GET | `/api/bookings/{id}` | Get booking details |
+| GET | `/api/bookings/active` | Get active bookings |
+| POST | `/api/bookings/{id}/cancel` | Cancel a booking |
+
+### Authorization
+
+The backend uses role-based access control:
+
+- `CUSTOMER` — create bookings and view booking history
+- `STAFF` / `OWNER` — access active booking information
+- Protected endpoints are secured using Spring Security
+
+### API Response
+
+The backend uses a common `ApiResponse` structure for API responses.
+
 ##  Architecture
 
 ```text
