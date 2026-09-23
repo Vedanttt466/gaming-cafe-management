@@ -61,6 +61,17 @@ The backend uses role-based access control:
 
 The backend uses a common `ApiResponse` structure for API responses.
 
+##  Screenshots
+
+### Home Page
+![Home Page](docs/home.png)
+
+### Booking Page
+![Booking Page](docs/booking.png)
+
+### Dashboard
+![Dashboard](docs/dashboard.png)
+
 ##  Architecture
 
 ```text
