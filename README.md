@@ -63,14 +63,14 @@ The backend uses a common `ApiResponse` structure for API responses.
 
 ##  Screenshots
 
-### Home Page
+### Login Page
 ![LoginPage](docs/loginPage.jpeg)
 
 ### Booking Page
-![Booking Page](docs/booking.png)
+![Booking Page](Customer.jpeg)
 
 ### Dashboard
-![Dashboard](docs/dashboard.png)
+![Dashboard](docs/OwnersDashboard.jpeg)
 
 ##  Architecture
 
