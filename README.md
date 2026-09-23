@@ -67,7 +67,7 @@ The backend uses a common `ApiResponse` structure for API responses.
 ![LoginPage](docs/loginPage.jpeg)
 
 ### Booking Page
-![Booking Page](Customer.jpeg)
+![Booking Page](docs/Customer.jpeg)
 
 ### Dashboard
 ![Dashboard](docs/OwnersDashboard.jpeg)
