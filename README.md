@@ -64,7 +64,7 @@ The backend uses a common `ApiResponse` structure for API responses.
 ##  Screenshots
 
 ### Home Page
-![Home Page](docs/home.png)
+![Home Page](docs/LoginPage)
 
 ### Booking Page
 ![Booking Page](docs/booking.png)
